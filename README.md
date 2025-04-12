@@ -6,6 +6,7 @@ The goal of this project is to perform an in-depth Exploratory Data Analysis (ED
 1.	Understand customer demographics.
 2.	Analyze sales trends over time.
 3.	Evaluate product performance to identify top-performing products and categories.
+4.	Providing a consolidated report for quick reference and decision-making.
 
 ## Dataset
 The analysis is conducted on a relational database consisting of three tables:
@@ -85,3 +86,65 @@ ADD CONSTRAINT fk_product_key
 FOREIGN KEY (product_key)
 REFERENCES dim_products(product_key);
 ```
+## Database Exploration
+Purpose:
+	To explore the structure of the database.
+	Inspect columns and metadata for specific tables.
+
+## 1. Retrieve a list of all tables in the public schema
+```sql
+SELECT 
+    TABLE_CATALOG, 
+    TABLE_SCHEMA, 
+    TABLE_NAME, 
+    TABLE_TYPE
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_SCHEMA = 'public';
+```
+## 2. Retrieve all columns for a table (Example: fact_sales)
+```sql
+SELECT 
+    COLUMN_NAME, 
+    DATA_TYPE, 
+    IS_NULLABLE, 
+    CHARACTER_MAXIMUM_LENGTH
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'fact_sales';
+```
+## 3. Combine total rows for each table into a single view
+```sql
+SELECT 'dim_customers' AS table_name, COUNT(*) AS row_count FROM dim_customers
+UNION ALL
+SELECT 'dim_products', COUNT(*) FROM dim_products
+UNION ALL
+SELECT 'fact_sales', COUNT(*) FROM fact_sales;
+```
+## 4. Check duplicate rows in dim_customers
+```sql
+SELECT customer_key, COUNT(*) AS duplicate_count
+FROM dim_customers
+GROUP BY customer_key
+HAVING COUNT(*) > 1;
+```
+## 5. Check NULL values in critical columns
+```sql
+SELECT *
+FROM dim_products
+WHERE start_date IS NULL;
+```
+## 6. Count distinct customers
+```sql
+SELECT COUNT(DISTINCT customer_key) AS total_customers
+FROM dim_customers;
+```
+## 7. Total customers by gender with percentage distribution
+```sql
+SELECT gender,
+       COUNT(customer_key) AS total_customers,
+       ROUND(COUNT(customer_key)::NUMERIC / SUM(COUNT(customer_key)) OVER () * 100, 2) AS percentage_distribution
+FROM dim_customers
+WHERE gender <> 'n/a'
+GROUP BY gender
+ORDER BY total_customers DESC;
+```
+
