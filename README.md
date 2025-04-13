@@ -362,6 +362,7 @@ ORDER BY profit_margin DESC;
 	Road-150 series also contributes significantly to profitability.
 4. Business Metrics:
 	Total revenue: 29.3M, total orders: 27.6K, and average shipping duration: 7 days.
+
 **Conclusions & Recommendations**
 	Focus marketing on the 40+ demographic, emphasizing lifestyle and comfort features.
 	Target June and December for promotions due to seasonal demand.
