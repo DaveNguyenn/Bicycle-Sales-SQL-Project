@@ -366,3 +366,8 @@ ORDER BY profit_margin DESC;
 3. Expand popular product lines (Mountain-200, Road Bikes) while optimizing profits across categories.
 4. Investigate reasons behind the 2014 sales drop and explore supply chain improvements.
 5. Optimize shipping to improve efficiency and customer satisfaction.
+
+## Author - Dave Nguyen
+**Linkedin Profile** https://www.linkedin.com/in/davenguyenn/
+
+Let’s continue to learn, grow, and achieve great things together—after all, connection is where progress begins.
