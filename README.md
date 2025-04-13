@@ -349,19 +349,18 @@ ORDER BY profit_margin DESC;
 ## Findings and Conclusion
 **Findings**
 1. Customer Demographics:
-	Majority of customers are from the United States (50%) with balanced gender distribution (male: 50.58%, female: 49.42%).
-	Customers aged 40+ dominate, making up 97% of the demographic.
-2. Sales Trends:
-	Peak sales in 2013 (16.3M) with strong performance in June and December.
-	Significant drop in 2014 (45.6K), indicating potential operational or market challenges.
-3. Product Performance & Profit Analysis
-	Road Bikes lead with 14.5M revenue, followed by Mountain Bikes.
-	Top-performing accessory: Tires and Tubes (244K revenue, 17K units).
-	Clothing: Jerseys are the most popular item.
-	Mountain-200 series is the most profitable, with margins exceeding 597K.
-	Road-150 series also contributes significantly to profitability.
-4. Business Metrics:
-	Total revenue: 29.3M, total orders: 27.6K, and average shipping duration: 7 days.
+* Majority of customers are from the United States (50%) with balanced gender distribution (male: 50.58%, female: 49.42%).
+* Customers aged 40+ dominate, making up 97% of the demographic.
+3. Sales Trends:
+* Peak sales in 2013 (16.3M) with strong performance in June and December.
+* Significant drop in 2014 (45.6K), indicating potential operational or market challenges.
+4. Product Performance & Profit Analysis
+* Road Bikes lead with 14.5M revenue, followed by Mountain Bikes.
+* Top-performing accessory: Tires and Tubes (244K revenue, 17K units).
+* Clothing: Jerseys are the most popular item.
+* Mountain-200 series is the most profitable, with margins exceeding 597K.
+5. Business Metrics:
+* Total revenue: 29.3M, total orders: 27.6K, and average shipping duration: 7 days.
 
 **Conclusions & Recommendations**
 1. Focus marketing on the 40+ demographic, emphasizing lifestyle and comfort features.
