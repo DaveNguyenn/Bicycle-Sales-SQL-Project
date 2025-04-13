@@ -365,7 +365,7 @@ ORDER BY profit_margin DESC;
 
 **Conclusions & Recommendations**
 	Focus marketing on the 40+ demographic, emphasizing lifestyle and comfort features.
-	Target June and December for promotions due to seasonal demand.
-	Expand popular product lines (Mountain-200, Road Bikes) while optimizing profits across categories.
-	Investigate reasons behind the 2014 sales drop and explore supply chain improvements.
-	Optimize shipping to improve efficiency and customer satisfaction.
+ 	Target June and December for promotions due to seasonal demand.
+  	Expand popular product lines (Mountain-200, Road Bikes) while optimizing profits across categories.
+   	Investigate reasons behind the 2014 sales drop and explore supply chain improvements.
+    	Optimize shipping to improve efficiency and customer satisfaction.
