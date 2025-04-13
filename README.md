@@ -364,8 +364,8 @@ ORDER BY profit_margin DESC;
 	Total revenue: 29.3M, total orders: 27.6K, and average shipping duration: 7 days.
 
 **Conclusions & Recommendations**
-	Focus marketing on the 40+ demographic, emphasizing lifestyle and comfort features.
- 	Target June and December for promotions due to seasonal demand.
-  	Expand popular product lines (Mountain-200, Road Bikes) while optimizing profits across categories.
-   	Investigate reasons behind the 2014 sales drop and explore supply chain improvements.
-    	Optimize shipping to improve efficiency and customer satisfaction.
+1. Focus marketing on the 40+ demographic, emphasizing lifestyle and comfort features.
+2. Target June and December for promotions due to seasonal demand.
+3. Expand popular product lines (Mountain-200, Road Bikes) while optimizing profits across categories.
+4. Investigate reasons behind the 2014 sales drop and explore supply chain improvements.
+5. Optimize shipping to improve efficiency and customer satisfaction.
