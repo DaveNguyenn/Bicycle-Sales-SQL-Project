@@ -280,7 +280,6 @@ SELECT 'Avg. Shipping Duration', AVG(shipping_date - order_date) FROM fact_sales
 -- View business metrics
 SELECT * FROM business_metrics;
 ```
-
 ## Customer Demographics
 Distribution of Customers by Country, Gender, Marital Status, and Age Group
 ## 1. Distribution by Country
@@ -313,7 +312,6 @@ FROM dim_customers
 GROUP BY age_group
 ORDER BY total_customers DESC;
 ```
-
 ## Monthly Sales Trends
 ```sql
 SELECT EXTRACT(YEAR FROM order_date) AS year, 
@@ -348,18 +346,18 @@ ORDER BY profit_margin DESC;
 ```
 ## Findings and Conclusion
 **Findings**
-1. Customer Demographics:
+1. **Customer Demographics**
 * Majority of customers are from the United States (50%) with balanced gender distribution (male: 50.58%, female: 49.42%).
 * Customers aged 40+ dominate, making up 97% of the demographic.
-3. Sales Trends:
+3. **Sales Trends**
 * Peak sales in 2013 (16.3M) with strong performance in June and December.
 * Significant drop in 2014 (45.6K), indicating potential operational or market challenges.
-4. Product Performance & Profit Analysis
+4. **Product Performance & Profit Analysis**
 * Road Bikes lead with 14.5M revenue, followed by Mountain Bikes.
 * Top-performing accessory: Tires and Tubes (244K revenue, 17K units).
 * Clothing: Jerseys are the most popular item.
 * Mountain-200 series is the most profitable, with margins exceeding 597K.
-5. Business Metrics:
+5. B**usiness Metrics**
 * Total revenue: 29.3M, total orders: 27.6K, and average shipping duration: 7 days.
 
 **Conclusions & Recommendations**
